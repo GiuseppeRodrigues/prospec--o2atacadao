@@ -78,10 +78,10 @@ main img{
     height: auto;
     display: block;
 }
-main img#sku{
-    
+main img.sku{
+        margin: 5px;
         padding: 0px 15px;
-        max-width: 600px;
+        max-width: 80%;
         height: auto;
         display: block;
 }
@@ -108,10 +108,14 @@ footer {
         font-size: 13pt;
         padding: 15px;
     }
+     main img.sku{
+        max-width:400px;
+    }
 
     main {
         padding: 10px;
     }
+  
 }
 
 @media (max-width: 480px) {
@@ -132,6 +136,11 @@ footer {
         font-size: 14pt;
         margin-top: 20px;
     }
+    main img.sku{
+        max-width:70%;
+        margin:;
+    }
+   
 
     footer {
         font-size: 10pt;
