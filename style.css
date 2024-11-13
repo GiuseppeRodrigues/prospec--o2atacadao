@@ -1,0 +1,139 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+
+.titulo {
+    text-align: center;
+    color: green;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+nav ul {
+    background-color: #ff6633;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: block;
+    padding: 5px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 13pt;
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: aliceblue;
+    transform: scale(1.2);
+    transition: transform 0.6s ease;
+    color: green;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: green;
+}
+div#info{
+    text-align: center;
+    padding-top: 60px;
+}
+
+main img{
+    padding: 0px 15px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+main img#sku{
+    
+        padding: 0px 15px;
+        max-width: 600px;
+        height: auto;
+        display: block;
+}
+
+footer {
+    background-color: #ff6633;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        padding: 15px;
+    }
+
+    nav ul li a {
+        font-size: 11pt;
+        padding: 5px;
+    }
+
+    .titulo {
+        font-size: 13pt;
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    nav ul li a {
+        font-size: 10pt;
+        padding: 5px;
+    }
+
+    .titulo {
+        font-size: 10pt;
+    }
+
+    h2 {
+        font-size: 14pt;
+        margin-top: 20px;
+    }
+
+    footer {
+        font-size: 10pt;
+    }
+}
